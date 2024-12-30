@@ -29,7 +29,7 @@ RegisterNetEvent("drugSales:showMenu")
 AddEventHandler("drugSales:showMenu", function()
     local elements = {}
     for drugType, price in pairs(Config.DrugPrices) do
-        table.insert(elements, {label = drugType .. " sell ($" .. price .. "/Piece)", value = drugType})
+        table.insert(elements, {"sell " label = drugType .. " ($" .. price .. "/Piece)", value = drugType})
     end
 
     ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'drug_menu', {

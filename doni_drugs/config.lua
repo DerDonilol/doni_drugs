@@ -5,7 +5,7 @@ Config.DrugPrices = {
     ["abgepacktes_meth"] = 135
 }
 
-Config.RequiredFlightTime = 4 -- in minutes
+Config.RequiredFlightTime = 3 -- in minutes
 
 Config.RequiredVehicleModel = "velum" -- The only vehicle that can sell drugs
 

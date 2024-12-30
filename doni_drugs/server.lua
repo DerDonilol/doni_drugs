@@ -9,8 +9,8 @@ AddEventHandler("drugSales:sellDrugs", function(playerId, drugType, amount)
         local totalPrice = Config.DrugPrices[drugType] * amount
         xPlayer.removeInventoryItem(drugType, amount)
         xPlayer.addAccountMoney(Config.CurrencyType, totalPrice)
-        TriggerClientEvent("esx:showNotification", playerId, "Du hast ~g~$" .. totalPrice .. "~s~ Schwarzgeld für " .. amount .. "x " .. drugType .. " erhalten.")
+        TriggerClientEvent("esx:showNotification", playerId, "You got ~g~$" .. totalPrice .. "~s~ black money for " .. amount .. "x " .. drugType .. ".")
     else
-        TriggerClientEvent("esx:showNotification", playerId, "Du hast nicht genug " .. drugType .. " dabei!")
+        TriggerClientEvent("esx:showNotification", playerId, "You dont have enough " .. drugType .. "!")
     end
 end)
